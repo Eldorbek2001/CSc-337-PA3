@@ -1,4 +1,14 @@
 <!DOCTYPE html>
+<!--
+Name: Ali Elbekov
+File: PA3 Sing-up form
+
+This html code represents a very simple sign-up
+website.
+The website has a link to a CSS file.
+
+-->
+
 <html lang="en" dir="ltr">
 
 <head>
@@ -23,28 +33,23 @@
           <tr>
             <td>First Name:</td>
             <td>
-                <input type="text" name="firstName" placeholder="Enter First Name"
-                  style="text-transform:capitalize"required>
+              <input type="text" name="firstName" placeholder="Enter First Name" style="text-transform:capitalize" pattern="[A-Za-z]+" required>
             </td>
           </tr>
           <tr>
             <td>Last Name:</td>
-            <td><input type="text" name="lastName" placeholder="Enter Last Name"
-              style="text-transform:capitalize"required>
+            <td><input type="text" name="lastName" placeholder="Enter Last Name" style="text-transform:capitalize" pattern="[A-Za-z]+" required>
             </td>
           </tr>
           <tr>
             <td>Primary Email:</td>
-            <td><input type="email" name="primaryEmail" placeholder="Enter e-mail"
-            required>
+            <td><input type="email" name="primaryEmail" placeholder="Enter e-mail" required>
             </td>
           </tr>
           <tr>
             <td>Password:
             </td>
-            <td> <input type="password" name="password" placeholder="Enter password"
-              minlength="8"
-               required>
+            <td> <input type="password" name="password" placeholder="Enter password" minlength="8" required>
             </td>
           </tr>
           <tr>
@@ -65,13 +70,15 @@
           </tr>
           <tr>
             <td>Phone Number</td>
-            <td><input type="tel number" name="phoneNumber" placeholder="XXX-XXXX(important)">
+            <td><input type="tel" name="phoneNumber" pattern="[0-9]{3}-[0-9]{4}">
             </td>
           </tr>
           <tr>
             <td>
               About You:
             </td>
+
+
             <td>
               <textarea name="bio" rows="3" placeholder="About You"></textarea>
             </td>
@@ -81,7 +88,7 @@
               Birthday:
             </td>
             <td>
-              <input type="date" name="birthday" placeholder="YYYY-MM-DD" value="">
+              <input type="date" name="birthday">
 
             </td>
           </tr>
@@ -93,7 +100,7 @@
               Yes:<input type="radio" name="likeTheWebSite" value="Yes" required>
             </td>
             <td>
-              No:<input type="radio" name="likeTheWebSite" value="No" >
+              No:<input type="radio" name="likeTheWebSite" value="No">
             </td>
           </tr>
           <tr>
@@ -101,7 +108,7 @@
               Satisfaction with your life(1-10):
             </td>
             <td>
-              <input type="range" name="satisfactionLevel" min="0" max="10" value="0" required>
+              <input type="range" name="satisfactionLevel" min="0" max="10" value="0">
             </td>
           </tr>
 
