@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Hello</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="outerBackground">
+    <img src="img/red_dev.jpg" alt="Red_developer.jpg" class="leftImg">
+    <h1>WebDevs group</h1>
+    <img src="img/red_hack.jpg" alt="red_hacker.jpg" class="rightImg">
+  </div>
+  <div class="bodySection">
+    <h2>Welcome to "RedDevs" web developers' group! </h2>
+    <h3>Please, fill in the below application to be
+      considered for the club membership</h3>
+    <div class="formDivision">
+      <form class="main" action="https://benjdd.com/sp" method="post">
+        <table>
+          <tr>
+            <td>First Name:</td>
+            <td>
+                <input type="text" name="firstName" placeholder="Enter First Name" pattern="[A-Za-z]{}"
+              required>
+            </td>
+          </tr>
+          <tr>
+            <td>Last Name:</td>
+            <td><input type="text" name="lastName" placeholder="Enter Last Name"
+              style="text-transform:capitalize" pattern="[A-Za-z]"required>
+            </td>
+          </tr>
+          <tr>
+            <td>Primary Email:</td>
+            <td><input type="email" name="primaryEmail" placeholder="Enter e-mail"
+            required>
+            </td>
+          </tr>
+          <tr>
+            <td>Password:
+            </td>
+            <td> <input type="password" name="password" placeholder="Enter password"
+              minlength="8"
+               required>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Secondary Email:
+            </td>
+            <td>
+              <input type="email" name="secondaryEmail" placeholder="Enter 2nd email">
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Your age:
+            </td>
+            <td>
+              <input type="number" name="age" placeholder="Enter your age">
+            </td>
+          </tr>
+          <tr>
+            <td>Phone Number</td>
+            <td><input type="tel number" name="phoneNumber" placeholder="XXX-XXXX(important)">
+            </td>
+          </tr>
+          <tr>
+            <td>
+              About You:
+            </td>
+            <td>
+              <textarea name="bio" placeholder="About You"></textarea>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Birthday:
+            </td>
+            <td>
+              <input type="date" name="birthday" placeholder="YYYY-MM-DD">
+
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Like the web page?
+            </td>
+            <td>
+              Yes:<input type="radio" name="likeTheWebSite" value="Yes">
+            </td>
+            <td>
+              No:<input type="radio" name="like" value="No" required>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Satisfaction with your life(1-10):
+            </td>
+            <td>
+              <input type="range" name="satisfactionLevel" min="0" max="10" value="0" required>
+            </td>
+          </tr>
+
+        </table>
+        <input type="submit">
+      </form>
+
+    </div>
+
+  </div>
+
+</body>
+
+</html>
