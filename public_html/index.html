@@ -23,14 +23,14 @@
           <tr>
             <td>First Name:</td>
             <td>
-                <input type="text" name="firstName" placeholder="Enter First Name" pattern="[A-Za-z]{}"
-              required>
+                <input type="text" name="firstName" placeholder="Enter First Name"
+                  style="text-transform:capitalize"required>
             </td>
           </tr>
           <tr>
             <td>Last Name:</td>
             <td><input type="text" name="lastName" placeholder="Enter Last Name"
-              style="text-transform:capitalize" pattern="[A-Za-z]"required>
+              style="text-transform:capitalize"required>
             </td>
           </tr>
           <tr>
@@ -73,7 +73,7 @@
               About You:
             </td>
             <td>
-              <textarea name="bio" placeholder="About You"></textarea>
+              <textarea name="bio" rows="3" placeholder="About You"></textarea>
             </td>
           </tr>
           <tr>
@@ -81,7 +81,7 @@
               Birthday:
             </td>
             <td>
-              <input type="date" name="birthday" placeholder="YYYY-MM-DD">
+              <input type="date" name="birthday" placeholder="YYYY-MM-DD" value="">
 
             </td>
           </tr>
@@ -90,10 +90,10 @@
               Like the web page?
             </td>
             <td>
-              Yes:<input type="radio" name="likeTheWebSite" value="Yes">
+              Yes:<input type="radio" name="likeTheWebSite" value="Yes" required>
             </td>
             <td>
-              No:<input type="radio" name="like" value="No" required>
+              No:<input type="radio" name="likeTheWebSite" value="No" >
             </td>
           </tr>
           <tr>

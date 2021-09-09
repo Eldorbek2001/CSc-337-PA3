@@ -16,8 +16,9 @@ input{
   margin-left: 50px;
 }
 textarea{
-  display: inline-block;
+  display:block;
   margin-left: 50px;
+  width: 163px;
 }
 td{
   text-align: left;
